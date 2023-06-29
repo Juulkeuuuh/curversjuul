@@ -139,6 +139,21 @@ hr{
 }
 }
 
+@media screen and (max-width: 520px){
+  .maincontainer p{
+    width: 280px;
+  }
+}
+@media screen and (max-width: 400px){
+  .maincontainer p{
+    width: 260px;
+   }
+}
+@media screen and (max-width: 360px){
+  .maincontainer p{
+    width: 220px;
+   }
+}
 
 .introduction{
   margin: auto;
