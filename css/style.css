@@ -1,6 +1,8 @@
 body{
   color: azure;
-  color: rgb(17, 19, 23);
+  color: #00003A;
+  height: 200vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -12,6 +14,7 @@ header img.headlogo{
   top: 47%;
   width: 10%;
   animation: breathing 3s infinite ease-in-out;
+  transition: top 0.5s ease-in-out;
 }
 header img.arrowDown{
   position: fixed;
@@ -24,7 +27,7 @@ header img.arrowDown{
 
 @media screen and (max-width: 850px){
   header img.headlogo{
-    width: 40%;
+    width: 20%;
   }
 }
 
@@ -51,4 +54,97 @@ header img.arrowDown{
   50% {
     transform: translateY(0);
   }
+}
+
+
+/* main */
+.topFix{
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+}
+
+.maincontainer{
+  margin: auto;
+  max-width: 800px;
+  position: relative;
+}
+
+.maincontainer h1{
+ font-size: 20px;
+ font-weight: 900;
+ letter-spacing: 15px;
+  text-transform: uppercase;
+  color: rgb(88, 143, 192);
+  color: #00003A;
+  margin-top: 20px;
+}
+
+.maincontainer p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #00003A;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  width: 400px;
+  line-height: 1.4;
+ }
+.maincontainer p:nth-child(2) {
+    margin-left: 50px;
+}
+.maincontainer p:nth-child(3) {
+  margin-left: 100px;
+}
+.maincontainer p:nth-child(4) {
+  margin-left: 150px;
+}
+.maincontainer p:nth-child(5) {
+  margin-left: 200px;
+}
+
+ .maincontainer p a{
+  font-weight: 300;
+  color: #00003A;
+  letter-spacing: 5px;
+ }
+
+.maincontainer img{
+  width: 100%;
+  margin-top: -50px;
+
+}
+
+hr{
+  height: 1px;
+  background-color: #00003A;
+  border: none;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 850px){
+  .maincontainer{
+    width: 80%;
+  }
+  .maincontainer p:nth-child(2) {
+    margin-left: 50px;
+}
+.maincontainer p:nth-child(3) {
+  margin-left: 0px;
+}
+.maincontainer p:nth-child(4) {
+  margin-left: 50px;
+}
+.maincontainer p:nth-child(5) {
+  margin-left: 0px;
+}
+}
+
+
+.introduction{
+  margin: auto;
+  width: fit-content;
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+  
 }
