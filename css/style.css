@@ -108,10 +108,26 @@ header img.arrowDown{
   letter-spacing: 5px;
  }
 
+ .maincontainer h2{
+  font-size: 20px;
+  font-weight: 400;
+  color: #00003A;
+  margin-bottom: 20px;
+  margin: auto;
+  width: 80%;
+  line-height: 1.4;
+ }
+ .maincontainer h2 a{
+  font-weight: 300;
+  color: #00003A;
+  letter-spacing: 5px;
+ }
+
 .maincontainer img{
   width: 100%;
+}
+.maincontainer img.hello{
   margin-top: -50px;
-
 }
 
 hr{
@@ -160,6 +176,92 @@ hr{
   width: fit-content;
   margin-top: 150px;
   margin-bottom: 150px;
+}
 
-  
+.articles{
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 300px;
+}
+
+.art{
+  height: 200px;
+  width: 100%;
+  margin-bottom: 50px;
+  /* background: green; */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.art img{
+  position: absolute;
+  translate: -50% -50%;
+  top: 50%;
+  left: 50%;
+  /* opacity: 75%; */
+}
+
+.art .art-tekst{
+  background: rgba(0, 0, 0, 0.2);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  width: 80%;
+}
+
+.art p{
+  color: aliceblue;
+  width: auto;
+  padding: 10px 0px;
+  font-size: 50px;
+  font-weight: 900;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.293);
+}
+
+@media screen and (max-width: 850px){
+  .art p{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 700px){
+  .art p{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 520px){
+  .art p{
+    font-size: 20px;
+  }
+  .art{
+    height: 100px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 400px){
+
+}
+@media screen and (max-width: 360px){
+
+}
+
+
+
+
+
+
+/* footer */
+footer p{
+  margin: auto;
+  width: fit-content;
+  font-size: 10px;
+  padding-bottom: 20px;
+  margin-top: 300px
 }
