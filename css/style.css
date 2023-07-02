@@ -184,14 +184,88 @@ hr{
   margin-bottom: 300px;
 }
 
+.article-top{
+  position: fixed;
+  bottom: -100%;
+  translate: -50% 0;
+  left: 50%;
+  width: 900px;
+  height: 90%;
+  background: white;
+  /* opacity: 75%; */
+
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.668);
+  /* border:  #00003A 5px solid; */
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.41);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(30px);
+  transition: bottom 500ms ease;
+}
+
+.article-top-inside{
+  /* height: 10000px; */
+  height: 100%;
+  margin: 20px;
+  /* background: rgba(0, 128, 0, 0.605); */
+  overflow-y: scroll;
+}
+
+.article-top-inside h2{
+  margin-bottom: 20px;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  line-height: 1.4;
+ }
+ .article-top-inside li{
+  margin-bottom: 20px;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  line-height: 1.4;
+ }
+ .article-top-inside hr{
+margin-top: 200px;
+ }
+
+.close-button{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  /* background: red; */
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 935px){
+  .article-top{
+    width: 95%;
+  }
+}
+@media screen and (max-width: 600px){
+  .article-top{
+    width: 90%;
+  }
+}
+
 .art{
-  height: 200px;
   width: 100%;
   margin-bottom: 50px;
   /* background: green; */
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  height: 200px;
+
+
+}
+.art:hover{
+  scale: 1.01;
+  transition: all 100ms ease;
 }
 
 .art img{
@@ -226,6 +300,7 @@ hr{
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.293);
 }
 
+
 @media screen and (max-width: 850px){
   .art p{
     font-size: 40px;
@@ -254,7 +329,23 @@ hr{
 
 
 
+.slide-in {
+  opacity: 0;
+  transform: translateX(-500px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.slide-in.slide-in-active {
+  opacity: 1;
+  transform: translateX(0);
+}
 
+.maincontainer img.hello{
+  margin-top: -50px;
+}
+.maincontainer img.sticky-div {
+  margin-top: 300px;
+  transition: margin-top 0.1s;
+}
 
 
 /* footer */
