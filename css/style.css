@@ -89,7 +89,7 @@ header img.arrowDown{
   width: 400px;
   line-height: 1.4;
  }
-.maincontainer p:nth-child(2) {
+/* .maincontainer p:nth-child(2) {
     margin-left: 50px;
 }
 .maincontainer p:nth-child(3) {
@@ -100,12 +100,11 @@ header img.arrowDown{
 }
 .maincontainer p:nth-child(5) {
   margin-left: 200px;
-}
+} */
 
  .maincontainer p a{
-  font-weight: 300;
+  font-weight: 900;
   color: #00003A;
-  letter-spacing: 5px;
  }
 
  .maincontainer h2{
@@ -141,7 +140,7 @@ hr{
   .maincontainer{
     width: 80%;
   }
-  .maincontainer p:nth-child(2) {
+  /* .maincontainer p:nth-child(2) {
     margin-left: 50px;
 }
 .maincontainer p:nth-child(3) {
@@ -152,7 +151,7 @@ hr{
 }
 .maincontainer p:nth-child(5) {
   margin-left: 0px;
-}
+} */
 }
 
 @media screen and (max-width: 520px){
@@ -259,10 +258,10 @@ margin-top: 200px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  height: 200px;
-
-
+  /* height: 200px; */
+  aspect-ratio: 2;
 }
+
 .art:hover{
   scale: 1.01;
   transition: all 100ms ease;
@@ -300,6 +299,16 @@ margin-top: 200px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.293);
 }
 
+.article-top-inside p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  display: block;
+}
+
+.article-top-inside h1 {
+  text-align: center;
+}
 
 @media screen and (max-width: 850px){
   .art p{
@@ -316,7 +325,7 @@ margin-top: 200px;
     font-size: 20px;
   }
   .art{
-    height: 100px;
+    /* height: 100px; */
     margin-bottom: 25px;
   }
 }
@@ -328,6 +337,22 @@ margin-top: 200px;
 }
 
 
+/* Standaard: Titel verbergen en tonen bij hover */
+.art .art-tekst {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.art:hover .art-tekst {
+  opacity: 1;
+}
+
+/* Op mobiele apparaten: Titel altijd zichtbaar */
+@media screen and (max-width: 768px) {
+  .art .art-tekst {
+      opacity: 1;
+  }
+}
 
 .slide-in {
   opacity: 0;

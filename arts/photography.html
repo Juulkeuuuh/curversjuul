@@ -1,0 +1,34 @@
+<!-- Close button -->
+
+<h1>PHOTOGRAPHY</h1>
+
+<p>Photography has always been an essential part of my creative process. From conceptual shoots to staged compositions, I strive to capture stories through images.</p>
+
+<p>Below, you can view my staged photography portfolio.</p>
+
+<!-- Responsive PDF viewer with aspect ratio & two-page spread -->
+<div class="pdf-container">
+    <iframe src="assets/photography/Staged%20Photography.pdf#view=FitH&page=1&zoom=page-fit&spread=even&toolbar=0" 
+            class="pdf-viewer"></iframe>
+</div>
+
+<hr>
+
+<!-- CSS to control width and aspect ratio -->
+<style>
+    .pdf-container {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 56.25%; /* Aspect ratio */
+    }
+
+    .pdf-viewer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
